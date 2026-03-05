@@ -1,12 +1,4 @@
-# ThepiMaleBye Fixing the parameter
 
-## Code
-try:
-    input_num = int(input("Credit Card Number: "))
-except Exception as e:
-    print("Credit card number must be numeric", e)
-
-# credit_num=str(input_num)
 def Is_Valid_Credit_card(x:str):
     try:
         sum = 0
@@ -23,5 +15,3 @@ def Is_Valid_Credit_card(x:str):
         return sum % 10 == 0
     except Exception as e:
         print("Credit card number must be numeric", e)
-
-#print(Is_Valid_Credit_card(credit_num))
