@@ -1,4 +1,4 @@
-From python:3.9
-add api_intergration.py
-Run pip install requests beatifulsoup4
-CMD ["python","./api_intergration"]
+FROM python:3.9
+ADD api_integration.py .
+RUN pip install requests beautifulsoup4
+CMD ["python","./api_integration.py"]
