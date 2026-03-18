@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: credit-card-validate
+spec:
+  selector:
+    matchLabels:
+      app: credit-card-validate
+  template:
+    metadata:
+      labels:
+        app: credit-card-validate
+    spec:
+      containers:
+      - name: credit-card-validate
+        image: python-imdb
+        imagePullPolicy: Never
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8000
+
