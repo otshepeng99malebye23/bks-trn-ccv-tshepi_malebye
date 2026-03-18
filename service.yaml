@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: credit-card-validate-service
+spec:
+  selector:
+    app: credit-card-validate
+  ports:
+  - port: 8000
+    targetPort: 8000
+  type: LoadBalancer

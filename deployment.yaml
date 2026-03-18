@@ -13,8 +13,9 @@ spec:
     spec:
       containers:
       - name: credit-card-validate
-        image: python-imdb
-        imagePullPolicy: Never
+        image: python-imdb:latest
+        imagePullPolicy: IfNotPresent
+
         resources:
           limits:
             memory: "128Mi"
